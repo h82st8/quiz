@@ -1,8 +1,7 @@
-let btns = document.getElementById('btns');
-btns.addEventListener('click', func);
+document.querySelector('.choice_wrap').addEventListener('click', func);
 
 function func(event) {
-	console.log();
+	console.log(event);
 	if (event.target.classList[0] == 'choice__item') {
 		let btn = document.getElementsByClassName('choice__item');
 

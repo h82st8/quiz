@@ -567,6 +567,14 @@
       margin-top: 0;
       font-size: 12px;
     }
+
+    .title_5::before {
+      top: -5px;
+    }
+
+    .title_5::after {
+      top: 0;
+    }
   }
 
   @media (min-width: 1441px) and (max-width: 2560px) {
