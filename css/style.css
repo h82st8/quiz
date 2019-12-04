@@ -161,7 +161,7 @@
 }
 
 .choice__item:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 /*
 .choice__item_1 {
@@ -187,6 +187,7 @@
   .choice__txt {
     display: block;
     margin-top: 50%;
+    height: 40%;
     color: #000;
     font-weight: bold;
   }
@@ -251,6 +252,10 @@
     background-color: darkgreen;
     color: #fff;
     font-weight: bold;
+  }
+
+  .btn_active {
+    border: 3px solid #000;
   }
 
   @media (min-width: 320px) and (max-width: 424px) {
@@ -592,6 +597,10 @@
     .step_icon::after {
       height: 3px;
       right: -93%;
+    }
+
+    .choice__item {
+      width: 20%;
     }
 
     .choice__txt {
