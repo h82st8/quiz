@@ -158,6 +158,10 @@
   margin-bottom: 20px;
   background-color: #555;
   text-align: center;
+  border: none;
+
+  color: #000;
+  font-weight: bold;
 }
 
 .choice__item:hover {
@@ -184,13 +188,13 @@
     background-color: green;
   }
 
-  .choice__txt {
+/*  .choice__txt {
     display: block;
     margin-top: 50%;
     height: 40%;
     color: #000;
     font-weight: bold;
-  }
+  }*/
 
   .next_step {
     display: block;
@@ -314,6 +318,8 @@
       margin-bottom: 10px;
       width: 45%;
       height: 70px;
+
+      font-size: 10px;
     }
 
     .next_step {
@@ -333,10 +339,10 @@
       height: 7px;
     }
 
-    .choice__txt {
+/*    .choice__txt {
       margin-top: 0;
       font-size: 10px;
-    }
+    }*/
 
     .input_wrap {
       margin-left: 0;
@@ -424,12 +430,14 @@
       width: 29%;
       height: 100px;
       margin-right: 10px;
-    }
 
-    .choice__txt {
-      margin-top: 0;
       font-size: 12px;
     }
+
+/*    .choice__txt {
+      margin-top: 0;
+      font-size: 12px;
+    }*/
 
     .input {
       padding: 10px;
@@ -521,12 +529,14 @@
       width: 22%;
       height: 100px;
       margin-right: 10px;
-    }
 
-    .choice__txt {
-      margin-top: 0;
       font-size: 12px;
     }
+
+/*    .choice__txt {
+      margin-top: 0;
+      font-size: 12px;
+    }*/
   }
 
   @media (min-width: 1025px) and (max-width: 1440px) {
@@ -561,12 +571,14 @@
 
     .choice__item {
       margin-right: 10px;
-    }
 
-    .choice__txt {
-      margin-top: 0;
       font-size: 12px;
     }
+
+/*    .choice__txt {
+      margin-top: 0;
+      font-size: 12px;
+    }*/
 
     .title_5::before {
       top: -5px;
@@ -609,12 +621,14 @@
 
     .choice__item {
       width: 20%;
-    }
-
-    .choice__txt {
-      margin-top: 0;
+      
       font-size: 24px;
     }
+
+/*    .choice__txt {
+      margin-top: 0;
+      font-size: 24px;
+    }*/
 
     .next_step {
       width: 300px;
