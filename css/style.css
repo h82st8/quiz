@@ -2,14 +2,23 @@
 @import url(media.css);
 @import url(header.css);
 */
+
+#li {
+  height: 20px;
+}
+
 .container {
   margin: 50px;
   font-family: sans-serif;
 }
 
+/*.header_next {
+  margin-top: 20px;
+}*/
+
 .header__txt {
   display: block;
-  margin-top: 10px;
+  margin-top: 0px;
   font-size: 40px;
 }
 
@@ -61,7 +70,7 @@
 }
 
 .step_wrap {
-  margin: 30px 20px 50px 40px;
+  margin: 30px 20px 30px 40px;
 }
 
 .step_txt {
@@ -100,6 +109,11 @@
 .main {
   margin-left: 40px;
 }
+
+
+/*.main_last {
+  margin-bottom: 40px;
+}*/
 
 .title {
   position: relative;
@@ -146,12 +160,13 @@
 }
 
 .choice_wrap {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-left: 40px;
 }
 
 .choice__item {
   display: inline-block;
+  vertical-align: top;
   width: 15%;
   height: 200px;
   margin-right: 20px;
@@ -194,457 +209,473 @@
     height: 40%;
     color: #000;
     font-weight: bold;
-  }*/
+    }*/
 
-  .next_step {
-    display: block;
-    margin-top: 40px;
-    margin-left: 40px;
-    padding: 20px;
-    width: 200px;
-    border-radius: 10px;
-    background-color: darkgreen;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-  }
-
-  .next_step:hover {
-    background-color: green;
-  }
-
-  .next_step__text {
-    position: relative;
-  }
-
-  .next_step__text::after {
-    position: absolute;
-    bottom: 10%;
-    right: -15%;
-    content: '';
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid #000;
-    border-right:2px solid #000;
-    transform: rotate(45deg);
-  }
-
-  .input_wrap {
-    margin-left: 40px;
-  }
-
-  .input {
-    width: 40%;
-    padding: 20px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-
-  .input_descr {
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  .input_btn {
-    display: block;
-    margin-top: 20px;
-    padding: 20px;
-    width: 40%;
-    border: none;
-    border-radius: 5px;
-    background-color: darkgreen;
-    color: #fff;
-    font-weight: bold;
-  }
-
-  .btn_active {
-    border: 3px solid #000;
-  }
-
-  @media (min-width: 320px) and (max-width: 424px) {
-    .container {
-      margin: 20px 20px 0 20px;
+    #style li {
+      padding: 10px 30px;
+      border: 3px solid #555;
+      border-radius: 10px;
+      font-weight: bold;
+      list-style-type: none;
     }
 
-    .main {
-      margin-left: 10px;
-    }
-
-    .header__txt {
-      margin-top: 3px;
-      font-size: 14px;
+    .next_step {
+      display: block;
+/*      display: none;*/
+      margin-top: 20px;
+      margin-left: 40px;
+      padding: 20px;
+      width: 200px;
+      border-radius: 10px;
+      background-color: darkgreen;
+      color: #fff;
+      text-decoration: none;
       text-align: center;
     }
 
-    .progress_wrap {
-      margin-top: 10px;
-      padding: 5px;
-    }
-
-    .progress_txt {
-      margin: 0;
-      font-size: 12px;
-    }
-
-    .step_wrap {
-      margin: 10px;
-    }
-
-    .title {
-      margin: 0;
-      margin-left: 25px;
-      font-size: 12px;
-    }
-
-    .title:before {
-      top: -5px;
-      left: -29px;
-      width: 25px;
-      height: 25px;
-    }
-
-    .title:after {
-      top: 0;
-      left: -21px;
-    }
-
-    .choice_wrap {
-      margin: 10px 0px 0 0;
-    }
-
-    .choice__item {
-      margin-right: 10px;
-      margin-bottom: 10px;
-      width: 45%;
-      height: 70px;
-
-      font-size: 10px;
-    }
-
-    .next_step {
-      width: 140px;
-      margin-top: 0px;
-      margin-left: 0;
-      padding: 10px;
+    .next_step:hover {
+      background-color: green;
     }
 
     .next_step__text {
-      font-size: 12px;
+      position: relative;
     }
 
     .next_step__text::after {
-      bottom: 12%;
-      width: 7px;
-      height: 7px;
+      position: absolute;
+      bottom: 10%;
+      right: -15%;
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid #000;
+      border-right:2px solid #000;
+      transform: rotate(45deg);
     }
 
-/*    .choice__txt {
-      margin-top: 0;
-      font-size: 10px;
-    }*/
-
     .input_wrap {
-      margin-left: 0;
+      margin-left: 40px;
+    }
+
+    .input {
+      width: 40%;
+      padding: 20px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
     }
 
     .input_descr {
-      margin: 10px;
-      font-size: 12px;
-    }
-
-    .input {
-      padding: 10px;
-      width: 100%;
-    }
-
-    .input_btn {
-      padding: 15px;
-      width: 100%;
-    }
-  }
-
-  @media (min-width: 425px) and (max-width: 768px) {
-    .container {
-      margin: 20px;
-      margin-bottom: 0;
-    }
-
-    .main {
-      margin-left: 10px;
-    }
-
-    .header__txt {
-      margin-top: 0;
-      font-size: 14px;
-    }
-
-    .progress_wrap {
-      margin-top: 10px;
-      padding: 10px;
-    }
-
-    .progress_txt {
-      margin: 0;
-      font-size: 14px;
-    }
-
-    .step_wrap {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-
-    .title {
-      margin-top: 0;
-      font-size: 15px;
-    }
-
-    .title:before {
-      top: -5px;
-      left: -34px;
-      width: 28px;
-      height: 28px;
-    }
-
-    .title:after {
-      top: 0;
-      left: -25px;
-    }
-
-    .choice_wrap {
-      margin-left: 0px;
-      margin-top: 20px;
-    }
-
-    .next_step {
-      margin-left: 0;
-      margin-top: 0px;
-      padding: 10px;
-    }
-
-    .next_step__text {
-      font-size: 12px;
-    }
-
-    .choice__item {
-      width: 29%;
-      height: 100px;
-      margin-right: 10px;
-
-      font-size: 12px;
-    }
-
-/*    .choice__txt {
-      margin-top: 0;
-      font-size: 12px;
-    }*/
-
-    .input {
-      padding: 10px;
-      width: 100%;
-    }
-
-    .input_wrap {
-      margin-left: 0;
-    }
-
-    .input_btn {
-      padding: 15px;
-      width: 100%;
-    }
-  }
-
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .title:before {
-      top: -5px;
-    }
-
-    .title_5::after {
-      top: 0;
-    }
-
-    .input {
-      width: 60%;
-    }
-
-    .input_btn {
-      width: 60%;
-    }
-  }
-
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .container {
-      margin-top: 10px;
-      margin-bottom: 0;
-    }
-
-    .main {
-      margin-left: 10px;
-    }
-
-    .header__txt {
-      margin-top: 0;
-      font-size: 25px;
-    }
-
-    .progress_wrap {
-      margin-top: 10px;
-    }
-
-    .progress_txt {
-      margin: 0;
-      font-size: 16px;
-    }
-
-    .step_wrap {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-
-    .title {
-      margin-top: 0;
-      font-size: 22px;
-    }
-
-    .title:before {
-      left: -57px;
-      width: 40px;
-      height: 40px;
-    }
-
-    .choice_wrap {
-      margin-top: 20px;
-    }
-
-    .next_step {
-      margin-top: 0px;
-      padding: 10px;
-    }
-
-    .next_step__text {
-      font-size: 12px;
-    }
-
-    .choice__item {
-      width: 22%;
-      height: 100px;
-      margin-right: 10px;
-
-      font-size: 12px;
-    }
-
-/*    .choice__txt {
-      margin-top: 0;
-      font-size: 12px;
-    }*/
-  }
-
-  @media (min-width: 1025px) and (max-width: 1440px) {
-    .container {
-      width: 80%;
-      margin: 20px auto;
-      margin-bottom: 0;
-    }
-
-    .header__txt {
-      font-size: 24px;
-    }
-
-    .progress_wrap {
-      margin-top: 20px;
-    }
-
-    .progress_txt {
-      margin: 0;
-    }
-
-    .step_wrap {
+      display: block;
       margin-bottom: 20px;
     }
-    .choice_wrap {
+
+    .input_btn {
+      display: block;
       margin-top: 20px;
+      padding: 20px;
+      width: 40%;
+      border: none;
+      border-radius: 5px;
+      background-color: darkgreen;
+      color: #fff;
+      font-weight: bold;
     }
 
-    .next_step {
-      margin-top: 10px;
+    .btn_active {
+      border: 3px solid #000;
     }
 
-    .choice__item {
-      margin-right: 10px;
+    @media (min-width: 320px) and (max-width: 424px) {
+      .container {
+        margin: 20px 20px 0 20px;
+      }
 
-      font-size: 12px;
+      .main {
+        margin-left: 10px;
+      }
+
+      .header__txt {
+        margin-top: 3px;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .progress_wrap {
+        margin-top: 10px;
+        padding: 5px;
+      }
+
+      .progress_txt {
+        margin: 0;
+        font-size: 12px;
+      }
+
+      .step_wrap {
+        margin: 10px;
+      }
+
+      .title {
+        margin: 0;
+        margin-left: 25px;
+        font-size: 12px;
+      }
+
+      .title:before {
+        top: -5px;
+        left: -29px;
+        width: 25px;
+        height: 25px;
+      }
+
+      .title:after {
+        top: 0;
+        left: -21px;
+      }
+
+      .choice_wrap {
+        margin: 10px 0px 0 0;
+      }
+
+      .choice__item {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 45%;
+        height: 70px;
+
+        font-size: 10px;
+      }
+
+      .next_step {
+        width: 140px;
+        margin-top: 0px;
+        margin-left: 0;
+        padding: 10px;
+      }
+
+      .next_step__text {
+        font-size: 12px;
+      }
+
+      .next_step__text::after {
+        bottom: 12%;
+        width: 7px;
+        height: 7px;
+      }
+
+/*    .choice__txt {
+      margin-top: 0;
+      font-size: 10px;
+      }*/
+
+      .input_wrap {
+        margin-left: 0;
+      }
+
+      .input_descr {
+        margin: 10px;
+        font-size: 12px;
+      }
+
+      .input {
+        padding: 10px;
+        width: 100%;
+      }
+
+      .input_btn {
+        padding: 15px;
+        width: 100%;
+      }
     }
+
+    @media (min-width: 425px) and (max-width: 768px) {
+      .container {
+        margin: 20px;
+        margin-bottom: 0;
+      }
+
+      .main {
+        margin-left: 10px;
+      }
+
+      .header__txt {
+        margin-top: 0;
+        font-size: 14px;
+      }
+
+      .progress_wrap {
+        margin-top: 10px;
+        padding: 10px;
+      }
+
+      .progress_txt {
+        margin: 0;
+        font-size: 14px;
+      }
+
+      .step_wrap {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .title {
+        margin-top: 0;
+        font-size: 15px;
+      }
+
+      .title:before {
+        top: -5px;
+        left: -34px;
+        width: 28px;
+        height: 28px;
+      }
+
+      .title:after {
+        top: 0;
+        left: -25px;
+      }
+
+      .choice_wrap {
+        margin-left: 0px;
+        margin-top: 20px;
+      }
+
+      .next_step {
+        margin-left: 0;
+        margin-top: 0px;
+        padding: 10px;
+      }
+
+      .next_step__text {
+        font-size: 12px;
+      }
+
+      .choice__item {
+        width: 29%;
+        height: 100px;
+        margin-right: 10px;
+
+        font-size: 12px;
+      }
 
 /*    .choice__txt {
       margin-top: 0;
       font-size: 12px;
-    }*/
+      }*/
 
-    .title_5::before {
-      top: -5px;
+      .input {
+        padding: 10px;
+        width: 100%;
+      }
+
+      .input_wrap {
+        margin-left: 0;
+      }
+
+      .input_btn {
+        padding: 15px;
+        width: 100%;
+      }
     }
 
-    .title_5::after {
-      top: 0;
-    }
-  }
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .title:before {
+        top: -5px;
+      }
 
-  @media (min-width: 1441px) and (max-width: 2560px) {
-    .container {
-      width: 80%;
-      margin: 50px auto;
-      margin-bottom: 0;
+      .title_5::after {
+        top: 0;
+      }
+
+      .input {
+        width: 60%;
+      }
+
+      .input_btn {
+        width: 60%;
+      }
     }
 
-    .progress_txt {
-      font-size: 30px;
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .container {
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+
+      .main {
+        margin-left: 10px;
+      }
+
+      .header__txt {
+        margin-top: 0;
+        font-size: 25px;
+      }
+
+      .progress_wrap {
+        margin-top: 10px;
+      }
+
+      .progress_txt {
+        margin: 0;
+        font-size: 16px;
+      }
+
+      .step_wrap {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .title {
+        margin-top: 0;
+        font-size: 22px;
+      }
+
+      .title:before {
+        left: -57px;
+        width: 40px;
+        height: 40px;
+      }
+
+      .choice_wrap {
+        margin-top: 20px;
+      }
+
+      .next_step {
+        margin-top: 0px;
+        padding: 10px;
+      }
+
+      .next_step__text {
+        font-size: 12px;
+      }
+
+      .choice__item {
+        width: 22%;
+        height: 100px;
+        margin-right: 10px;
+
+        font-size: 12px;
+      }
+
+/*    .choice__txt {
+      margin-top: 0;
+      font-size: 12px;
+      }*/
     }
 
-    .step_wrap {
+    @media (min-width: 1025px) and (max-width: 1440px) {
+      .container {
+        width: 70%;
+        margin: 40px auto;
+        margin-bottom: 0;
+      }
+
+      .header__txt {
+        font-size: 24px;
+      }
+
+      .progress_wrap {
+        margin-top: 20px;
+      }
+
+      .progress_txt {
+        margin: 0;
+      }
+
+      .step_wrap {
+        margin-bottom: 20px;
+      }
+      .choice_wrap {
+        margin-top: 20px;
+      }
+
+      .next_step {
+        margin-top: 10px;
+      }
+
+      .choice__item {
+        width: 28%;
+        margin-right: 10px;
+        height: 100px;
+
+        font-size: 12px;
+      }
+
+/*    .choice__txt {
+      margin-top: 0;
+      font-size: 12px;
+      }*/
+
+      .title_5::before {
+        top: -5px;
+      }
+
+      .title_5::after {
+        top: 0;
+      }
+    }
+
+    @media (min-width: 1441px) and (max-width: 2560px) {
+      .container {
+        width: 70%;
+        margin: 50px auto;
+        margin-bottom: 0;
+      }
+
+      .progress_wrap {
+        margin-top: 20px;
+      }
+
+      .progress_txt {
+        margin: 0;
+        font-size: 30px;
+      }
+
+/*    .step_wrap {
       margin-top: 50px;
-    }
+      }*/
 
-    .step_txt {
-      font-size: 40px;
-    }
+      .step_txt {
+        font-size: 40px;
+      }
 
-    .step_icon {
-      width: 23px;
-      height: 23px;
-      border: 2px solid darkgreen;
-    }
+      .step_icon {
+        width: 23px;
+        height: 23px;
+        border: 2px solid darkgreen;
+      }
 
-    .step_icon::after {
-      height: 3px;
-      right: -93%;
-    }
+      .step_icon::after {
+        height: 3px;
+        right: -93%;
+      }
 
-    .choice__item {
-      width: 20%;
-      
-      font-size: 24px;
-    }
+      .choice__item {
+        width: 25%;
+
+        font-size: 24px;
+      }
 
 /*    .choice__txt {
       margin-top: 0;
       font-size: 24px;
-    }*/
+      }*/
 
-    .next_step {
-      width: 300px;
-      padding: 20px 50px;
-    }
+      .next_step {
+        width: 300px;
+        padding: 20px 50px;
+      }
 
-    .next_step__text {
-      font-size: 30px;
-    }
+      .next_step__text {
+        font-size: 30px;
+      }
 
-    .next_step__text::after {
-      bottom: 24%;
-      right: -13%;
-    }
+      .next_step__text::after {
+        bottom: 24%;
+        right: -13%;
+      }
 
-    .input_descr {
-      font-size: 20px;
+      .input_descr {
+        font-size: 20px;
+      }
     }
-  }
