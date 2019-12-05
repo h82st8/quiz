@@ -2,9 +2,10 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" containerent="width=device-width, initial-scale=1.0">
-  <meta name="Keywords" containerent="">
-  <title>Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Keywords" content="">
+  <meta name="description" content="Выбирайте из широчайшего ассортимента моделей, стилей и дизайнерских решений. Разнообразие модулей, типов отделок, цветов аксессуаров и декоративных элементов, дает выбор из более чем 100.000 различных комбинаций, для Вашей особенной кухни.">
+  <title>Julis - Quiz</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,26 +22,29 @@
 
       <div class="step_wrap">
         <span class="step_txt">Шаг 1</span>
-        <div class="step_icon active"><a class='page_link' href="index.html"></a></div>
-        <div class="step_icon"><a class='page_link' href="step2.html"></a></div>
-        <div class="step_icon"><a class='page_link' href="step3.html"></a></div>
-        <div class="step_icon"><a class='page_link' href="step4.html"></a></div>
-        <div class="step_icon"><a class='page_link' href="step5.html"></a></div>
+        <div class="step_icon active"></div>
+        <div class="step_icon"></div>
+        <div class="step_icon"></div>
+        <div class="step_icon"></div>
+        <div class="step_icon"></div>
       </div>
 
     </header>
     <main class="main">
       <h1 class="title title_1">В каком стиле вы хотите кухню?</h1>
       <div class="choice_wrap" id='btns'>
-        <button type='button' value="Стиль 1" class="choice__item choice__item_1" id='btn1'>
-          Стиль 1
-        </button>
-        <button type='button' value="Стиль 2" class="choice__item choice__item_2" id='btn2'>
-          Стиль 2
-        </button>
-        <button type='button' value="Стиль 3" class="choice__item choice__item_3" id='btn3'>
-          Стиль 3
-        </button>
+        <div class="choice_inner">
+          <button type='button' value="Классический стиль" class="choice__item choice__item_1" id='btn1'>        </button>
+          <span class="choice_txt">Классический стиль</span>
+        </div>
+        <div class="choice_inner">
+          <button type='button' value="Премиум стиль" class="choice__item choice__item_2" id='btn2'>        </button>
+          <span class="choice_txt">Премиум стиль</span>
+        </div>
+        <div class="choice_inner">
+          <button type='button' value="Стиль модерн" class="choice__item choice__item_3" id='btn3'>        </button>
+          <span class="choice_txt">Стиль модерн</span>
+        </div>
       </div>
 
       <ul id="style">
@@ -53,94 +57,112 @@
 
     </main>
   </div>
-    <!-- Вторая страница -->
+  <!-- Вторая страница -->
 
-    <div class="container container_2" id='cont2'>
-      <header class="header">
-
-      <span class="header__txt">Узнайте стоимость вашей будущей кухни за 60 секунд</span>
-      <span class="header__txt">+ получите гарантированный подарок</span>
-
-        <div class="progress_wrap">
-          <div class="progress_item progress_item_1"></div>
-          <span class="progress_txt"><b>Осталось ответить на 3 вопроса,</b> чтобы получить гарантированный подарок</span>
-        </div>
-
-        <div class="step_wrap">
-          <span class="step_txt">Шаг 2</span>
-          <div class="step_icon active"></div>
-          <div class="step_icon active"></div>
-          <div class="step_icon"></div>
-          <div class="step_icon"></div>
-          <div class="step_icon"></div>
-        </div>
-
-      </header>
-      <main class="main">
-        <h1 class="title title_2">В каком цвете вы хотите кухню?</h1>
-        <div class="choice_wrap choice_wrap_2" id='btns'>
-          <button type='button' value="red" class="choice__item choice__item_4">red</button>
-          <button type='button' value="yellow" class="choice__item choice__item_5">yellow</button>
-          <button type='button' value="green" class="choice__item choice__item_6">green</button>
-        </div>
-
-        <ul id="style">
-          <li id='li2'></li>
-        </ul>
-
-        <button class="next_step" id="btn22">
-          <span class="next_step__text">На следущий шаг</span>
-        </button>
-      </main>
-    </div>
-
-    <!-- Третья страница -->
-
-    <div class="container container_3" id="cont3">
-      <header class="header">
+  <div class="container container_2" id='cont2'>
+    <header class="header">
 
       <span class="header__txt">Узнайте стоимость вашей будущей кухни за 60 секунд</span>
       <span class="header__txt">+ получите гарантированный подарок</span>
 
-        <div class="progress_wrap">
-          <div class="progress_item progress_item_2"></div>
-          <span class="progress_txt"><b>Осталось ответить на 2 вопроса,</b> чтобы получить гарантированный подарок</span>
+      <div class="progress_wrap">
+        <div class="progress_item progress_item_1"></div>
+        <span class="progress_txt"><b>Осталось ответить на 3 вопроса,</b> чтобы получить гарантированный подарок</span>
+      </div>
+
+      <div class="step_wrap">
+        <span class="step_txt">Шаг 2</span>
+        <div class="step_icon active"></div>
+        <div class="step_icon active"></div>
+        <div class="step_icon"></div>
+        <div class="step_icon"></div>
+        <div class="step_icon"></div>
+      </div>
+
+    </header>
+    <main class="main">
+      <h1 class="title title_2">В каком цвете вы хотите кухню?</h1>
+      <div class="choice_wrap choice_wrap_2" id='btns'>
+        <div class="choice_inner">
+          <button type='button' value="Темные кухни" class="choice__item choice__item_4"></button><span class="choice_txt">Темные кухни</span>
         </div>
-
-        <div class="step_wrap">
-          <span class="step_txt">Шаг 3</span>
-          <div class="step_icon active"></div>
-          <div class="step_icon active"></div>
-          <div class="step_icon active"></div>
-          <div class="step_icon"></div>
-          <div class="step_icon"></div>
+        <div class="choice_inner">
+          <button type='button' value="Цветные кухни" class="choice__item choice__item_5"></button><span class="choice_txt">Цветные кухни</span>
         </div>
-
-      </header>
-      <main class="main">
-        <h1 class="title title_3">Какой материал вам нравится?</h1>
-        <div class="choice_wrap choice_wrap_3" id='btns'>
-          <button type='button' value="Эмаль" class="choice__item choice__item_7">Эмаль</button>
-          <button type='button' value="Шпон" class="choice__item choice__item_8">Шпон</button>
-          <button type='button' value="Массив" class="choice__item choice__item_9">Массив</button>
-          <button type='button' value="Пластик" class="choice__item choice__item_10">Пластик</button>
-          <button type='button' value="Бетон" class="choice__item choice__item_11">Бетон</button>
-          <button type='button' value="Еще не знаю" class="choice__item choice__item_12">Еще не знаю</button>
+        <div class="choice_inner">
+          <button type='button' value="Светлые кухни" class="choice__item choice__item_6"></button><span class="choice_txt">Светлые кухни</span>
         </div>
+      </div>
 
-        <ul id="style">
-          <li id='li3'></li>
-        </ul>
+      <ul id="style">
+        <li id='li2'></li>
+      </ul>
 
-        <button class="next_step" id="btn33">
-          <span class="next_step__text">На следущий шаг</span>
-        </button>
-      </main>
-    </div>
+      <button class="next_step" id="btn22">
+        <span class="next_step__text">На следущий шаг</span>
+      </button>
+    </main>
+  </div>
 
-    <!-- Четвертая страница -->
-<div class="container container_4" id="cont4">
-      <header class="header">
+  <!-- Третья страница -->
+
+  <div class="container container_3" id="cont3">
+    <header class="header">
+
+      <span class="header__txt">Узнайте стоимость вашей будущей кухни за 60 секунд</span>
+      <span class="header__txt">+ получите гарантированный подарок</span>
+
+      <div class="progress_wrap">
+        <div class="progress_item progress_item_2"></div>
+        <span class="progress_txt"><b>Осталось ответить на 2 вопроса,</b> чтобы получить гарантированный подарок</span>
+      </div>
+
+      <div class="step_wrap">
+        <span class="step_txt">Шаг 3</span>
+        <div class="step_icon active"></div>
+        <div class="step_icon active"></div>
+        <div class="step_icon active"></div>
+        <div class="step_icon"></div>
+        <div class="step_icon"></div>
+      </div>
+
+    </header>
+    <main class="main">
+      <h1 class="title title_3">Какой материал вам нравится?</h1>
+      <div class="choice_wrap choice_wrap_3" id='btns'>
+        <div class="choice_inner">
+          <button type='button' value="Эмаль" class="choice__item choice__item_7"></button><span class="choice_txt">Эмаль</span>
+        </div>
+        <div class="choice_inner">
+          <button type='button' value="Шпон" class="choice__item choice__item_8"></button><span class="choice_txt">Шпон</span>
+        </div>
+        <div class="choice_inner">
+          <button type='button' value="Массив" class="choice__item choice__item_9"></button><span class="choice_txt">Массив</span>
+        </div>
+        <div class="choice_inner">
+          <button type='button' value="Пластик" class="choice__item choice__item_10"></button><span class="choice_txt">Пластик</span>
+        </div>
+        <div class="choice_inner">
+          <button type='button' value="Бетон" class="choice__item choice__item_11"></button><span class="choice_txt">Бетон</span>
+        </div>
+        <div class="choice_inner">
+          <button type='button' value="Еще не знаю" class="choice__item choice__item_12"></button><span class="choice_txt">Еще не знаю</span>
+        </div>
+      </div>
+
+      <ul id="style">
+        <li id='li3'></li>
+      </ul>
+
+      <button class="next_step" id="btn33">
+        <span class="next_step__text">На следущий шаг</span>
+      </button>
+    </main>
+  </div>
+
+  <!-- Четвертая страница -->
+  <div class="container container_4" id="cont4">
+    <header class="header">
 
       <span class="header__txt">Узнайте стоимость вашей будущей кухни за 60 секунд</span>
       <span class="header__txt">+ получите гарантированный подарок</span>
@@ -185,13 +207,13 @@
         <span class="next_step__text">На следущий шаг</span>
       </button>
     </main>
-</div>
+  </div>
 
 
-    <!-- Пятая страница -->
+  <!-- Пятая страница -->
 
-<div class="container container_5" id="cont5">
-      <header class="header">
+  <div class="container container_5" id="cont5">
+    <header class="header">
 
       <span class="header__txt">Узнайте стоимость вашей будущей кухни за 60 секунд</span>
       <span class="header__txt">+ получите гарантированный подарок</span>
@@ -224,7 +246,7 @@
         <input class="input_btn" type="submit" value="Получить результат расчета">
       </form>
     </main>
-</div>
+  </div>
 
   <script src="js/script.js"></script>
 </body>
