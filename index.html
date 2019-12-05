@@ -47,7 +47,7 @@
         <li id='li' name="style"></li>
       </ul>
 
-      <button class="next_step" data-tab="0" id="btn11">
+      <button class="next_step" id="btn11">
         <span class="next_step__text" >На следущий шаг</span>
       </button>
 
@@ -56,7 +56,7 @@
     <!-- Вторая страница -->
 
     <div class="container container_2" id='cont2'>
-      <header class="header header_next">
+      <header class="header">
 
       <span class="header__txt">Узнайте стоимость вашей будущей кухни за 60 секунд</span>
       <span class="header__txt">+ получите гарантированный подарок</span>
@@ -88,7 +88,7 @@
           <li id='li2'></li>
         </ul>
 
-        <button class="next_step" data-tab="1" id="btn22">
+        <button class="next_step" id="btn22">
           <span class="next_step__text">На следущий шаг</span>
         </button>
       </main>
@@ -97,7 +97,7 @@
     <!-- Третья страница -->
 
     <div class="container container_3" id="cont3">
-      <header class="header header_next">
+      <header class="header">
 
       <span class="header__txt">Узнайте стоимость вашей будущей кухни за 60 секунд</span>
       <span class="header__txt">+ получите гарантированный подарок</span>
@@ -132,7 +132,7 @@
           <li id='li3'></li>
         </ul>
 
-        <button class="next_step" data-tab="2" id="btn33">
+        <button class="next_step" id="btn33">
           <span class="next_step__text">На следущий шаг</span>
         </button>
       </main>
@@ -140,7 +140,7 @@
 
     <!-- Четвертая страница -->
 <div class="container container_4" id="cont4">
-      <header class="header header_next">
+      <header class="header">
 
       <span class="header__txt">Узнайте стоимость вашей будущей кухни за 60 секунд</span>
       <span class="header__txt">+ получите гарантированный подарок</span>
@@ -181,7 +181,7 @@
         <li id='li4'></li>
       </ul>
 
-      <button class="next_step" data-tab="3" id="btn44">
+      <button class="next_step" id="btn44">
         <span class="next_step__text">На следущий шаг</span>
       </button>
     </main>
@@ -191,7 +191,7 @@
     <!-- Пятая страница -->
 
 <div class="container container_5" id="cont5">
-      <header class="header header_next">
+      <header class="header">
 
       <span class="header__txt">Узнайте стоимость вашей будущей кухни за 60 секунд</span>
       <span class="header__txt">+ получите гарантированный подарок</span>
@@ -213,7 +213,7 @@
     </header>
     <main class="main main_last">
       <h1 class="title title_5">Спасибо за ответы! Получите результат расчета, оставив контакты.</h1>
-      <div class="input_wrap">
+      <form action="mail.php" class="input_wrap">
         <span class="input_descr">Введите номер телефона, мы вышлем СМС с результатами:</span>
         <input type="text" name="style" class="input_invisible" id="input1">
         <input type="text" name="color" class="input_invisible" id="input2">
@@ -221,8 +221,8 @@
         <input type="text" name="money" class="input_invisible" id="input4">
 
         <input class="input" type="text" name='phone' placeholder="Введите Ваш номер телефона">
-        <button class="input_btn">Получить результат расчета</button>
-      </div>
+        <input class="input_btn" type="submit" value="Получить результат расчета">
+      </form>
     </main>
 </div>
 

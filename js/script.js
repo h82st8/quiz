@@ -51,7 +51,6 @@ function func(event) {
 	li.innerHTML = taggedName;
 	let input = document.querySelector("#input1");
 	input.value = taggedName;
-	// save(taggedName);
 
 }
 
@@ -77,8 +76,6 @@ function func2(event) {
 	let input = document.querySelector("#input2");
 	input.value = taggedName;
 
-	// save(taggedName);
-
 }
 
 function func3(event) {
@@ -103,8 +100,6 @@ function func3(event) {
 	let input = document.querySelector("#input3");
 	input.value = taggedName;
 
-	// save(taggedName);
-
 }
 
 function func4(event) {
@@ -128,7 +123,4 @@ function func4(event) {
 	li.innerHTML = taggedName;
 	let input = document.querySelector("#input4");
 	input.value = taggedName;
-
-	// save(taggedName);
-
 }
