@@ -2,14 +2,14 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Keywords" content="">
+  <meta name="viewport" containerent="width=device-width, initial-scale=1.0">
+  <meta name="Keywords" containerent="">
   <title>Quiz</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
+  <div class="container container_1" id="cont1">
     <header class="header">
 
       <span class="header__txt">Узнайте стоимость вашей будущей кухни за 60 секунд</span>
@@ -44,93 +44,106 @@
       </div>
 
       <ul id="style">
-        <li id='li'></li>
+        <li id='li' name="style"></li>
       </ul>
 
-      <a href="step2.html" class="next_step">
-        <span class="next_step__text">На следущий шаг</span>
-      </a>
+      <button class="next_step" data-tab="0" id="btn11">
+        <span class="next_step__text" >На следущий шаг</span>
+      </button>
 
     </main>
+  </div>
+    <!-- Вторая страница -->
 
-<!-- Вторая страница -->
+    <div class="container container_2" id='cont2'>
+      <header class="header header_next">
 
-<!--     <header class="header header_next">
+      <span class="header__txt">Узнайте стоимость вашей будущей кухни за 60 секунд</span>
+      <span class="header__txt">+ получите гарантированный подарок</span>
 
-      <div class="progress_wrap">
-        <div class="progress_item progress_item_1"></div>
-        <span class="progress_txt"><b>Осталось ответить на 3 вопроса,</b> чтобы получить гарантированный подарок</span>
-      </div>
+        <div class="progress_wrap">
+          <div class="progress_item progress_item_1"></div>
+          <span class="progress_txt"><b>Осталось ответить на 3 вопроса,</b> чтобы получить гарантированный подарок</span>
+        </div>
 
-      <div class="step_wrap">
-        <span class="step_txt">Шаг 2</span>
-        <div class="step_icon active"></div>
-        <div class="step_icon active"></div>
-        <div class="step_icon"></div>
-        <div class="step_icon"></div>
-        <div class="step_icon"></div>
-      </div>
+        <div class="step_wrap">
+          <span class="step_txt">Шаг 2</span>
+          <div class="step_icon active"></div>
+          <div class="step_icon active"></div>
+          <div class="step_icon"></div>
+          <div class="step_icon"></div>
+          <div class="step_icon"></div>
+        </div>
 
-    </header>
-    <main class="main">
-      <h1 class="title title_2">В каком цвете вы хотите кухню?</h1>
-      <div class="choice_wrap" id='btns'>
-        <button type='button' value="red" class="choice__item choice__item_4">red</button>
-        <button type='button' value="yellow" class="choice__item choice__item_5">yellow</button>
-        <button type='button' value="green" class="choice__item choice__item_6">green</button>
-      </div>
+      </header>
+      <main class="main">
+        <h1 class="title title_2">В каком цвете вы хотите кухню?</h1>
+        <div class="choice_wrap choice_wrap_2" id='btns'>
+          <button type='button' value="red" class="choice__item choice__item_4">red</button>
+          <button type='button' value="yellow" class="choice__item choice__item_5">yellow</button>
+          <button type='button' value="green" class="choice__item choice__item_6">green</button>
+        </div>
 
-      <ul id="style">
-        <li id='li'></li>
-      </ul>
+        <ul id="style">
+          <li id='li2'></li>
+        </ul>
 
-      <a href="step3.html" class="next_step">
-        <span class="next_step__text">На следущий шаг</span>
-      </a>
-    </main> -->
+        <button class="next_step" data-tab="1" id="btn22">
+          <span class="next_step__text">На следущий шаг</span>
+        </button>
+      </main>
+    </div>
 
-<!-- Третья страница -->
+    <!-- Третья страница -->
 
-<!--     <header class="header header_next">
+    <div class="container container_3" id="cont3">
+      <header class="header header_next">
 
-      <div class="progress_wrap">
-        <div class="progress_item progress_item_2"></div>
-        <span class="progress_txt"><b>Осталось ответить на 2 вопроса,</b> чтобы получить гарантированный подарок</span>
-      </div>
+      <span class="header__txt">Узнайте стоимость вашей будущей кухни за 60 секунд</span>
+      <span class="header__txt">+ получите гарантированный подарок</span>
 
-      <div class="step_wrap">
-        <span class="step_txt">Шаг 3</span>
-        <div class="step_icon active"></div>
-        <div class="step_icon active"></div>
-        <div class="step_icon active"></div>
-        <div class="step_icon"></div>
-        <div class="step_icon"></div>
-      </div>
+        <div class="progress_wrap">
+          <div class="progress_item progress_item_2"></div>
+          <span class="progress_txt"><b>Осталось ответить на 2 вопроса,</b> чтобы получить гарантированный подарок</span>
+        </div>
 
-    </header>
-    <main class="main">
-      <h1 class="title title_3">Какой материал вам нравится?</h1>
-      <div class="choice_wrap" id='btns'>
-        <button type='button' value="Эмаль" class="choice__item choice__item_7">Эмаль</button>
-        <button type='button' value="Шпон" class="choice__item choice__item_8">Шпон</button>
-        <button type='button' value="Массив" class="choice__item choice__item_9">Массив</button>
-        <button type='button' value="Пластик" class="choice__item choice__item_10">Пластик</button>
-        <button type='button' value="Бетон" class="choice__item choice__item_11">Бетон</button>
-        <button type='button' value="Еще не знаю" class="choice__item choice__item_12">Еще не знаю</button>
-      </div>
+        <div class="step_wrap">
+          <span class="step_txt">Шаг 3</span>
+          <div class="step_icon active"></div>
+          <div class="step_icon active"></div>
+          <div class="step_icon active"></div>
+          <div class="step_icon"></div>
+          <div class="step_icon"></div>
+        </div>
 
-      <ul id="style">
-        <li id='li'></li>
-      </ul>
+      </header>
+      <main class="main">
+        <h1 class="title title_3">Какой материал вам нравится?</h1>
+        <div class="choice_wrap choice_wrap_3" id='btns'>
+          <button type='button' value="Эмаль" class="choice__item choice__item_7">Эмаль</button>
+          <button type='button' value="Шпон" class="choice__item choice__item_8">Шпон</button>
+          <button type='button' value="Массив" class="choice__item choice__item_9">Массив</button>
+          <button type='button' value="Пластик" class="choice__item choice__item_10">Пластик</button>
+          <button type='button' value="Бетон" class="choice__item choice__item_11">Бетон</button>
+          <button type='button' value="Еще не знаю" class="choice__item choice__item_12">Еще не знаю</button>
+        </div>
 
-      <a href="step4.html" class="next_step">
-        <span class="next_step__text">На следущий шаг</span>
-      </a>
-    </main> -->
+        <ul id="style">
+          <li id='li3'></li>
+        </ul>
 
-<!-- Четвертая страница -->
+        <button class="next_step" data-tab="2" id="btn33">
+          <span class="next_step__text">На следущий шаг</span>
+        </button>
+      </main>
+    </div>
 
-<!--     <header class="header header_next">
+    <!-- Четвертая страница -->
+<div class="container container_4" id="cont4">
+      <header class="header header_next">
+
+      <span class="header__txt">Узнайте стоимость вашей будущей кухни за 60 секунд</span>
+      <span class="header__txt">+ получите гарантированный подарок</span>
 
       <div class="progress_wrap">
         <div class="progress_item progress_item_3"></div>
@@ -149,7 +162,7 @@
     </header>
     <main class="main">
       <h1 class="title title_4">Какой бюджет вы планируете на кухню?</h1>
-      <div class="choice_wrap" id='btns'>
+      <div class="choice_wrap choice_wrap_4" id='btns'>
         <button type='button' value="Стандарт" class="choice__item choice__item_13">
           Стандарт от 50 000 до 150 000 руб.
         </button>
@@ -165,17 +178,23 @@
       </div>
 
       <ul id="style">
-        <li id='li'></li>
+        <li id='li4'></li>
       </ul>
 
-      <a href="step5.html" class="next_step">
+      <button class="next_step" data-tab="3" id="btn44">
         <span class="next_step__text">На следущий шаг</span>
-      </a>
-    </main> -->
+      </button>
+    </main>
+</div>
 
-<!-- Пятая страница -->
 
-<!--     <header class="header header_next">
+    <!-- Пятая страница -->
+
+<div class="container container_5" id="cont5">
+      <header class="header header_next">
+
+      <span class="header__txt">Узнайте стоимость вашей будущей кухни за 60 секунд</span>
+      <span class="header__txt">+ получите гарантированный подарок</span>
 
       <div class="progress_wrap">
         <div class="progress_item progress_item_4"></div>
@@ -196,11 +215,15 @@
       <h1 class="title title_5">Спасибо за ответы! Получите результат расчета, оставив контакты.</h1>
       <div class="input_wrap">
         <span class="input_descr">Введите номер телефона, мы вышлем СМС с результатами:</span>
-        <input class="input" type="text" placeholder="Введите Ваш номер телефона">
+        <input type="text" name="style" class="input_invisible" id="input1">
+        <input type="text" name="color" class="input_invisible" id="input2">
+        <input type="text" name="material" class="input_invisible" id="input3">
+        <input type="text" name="money" class="input_invisible" id="input4">
+
+        <input class="input" type="text" name='phone' placeholder="Введите Ваш номер телефона">
         <button class="input_btn">Получить результат расчета</button>
       </div>
-    </main> -->
-
+    </main>
 </div>
 
   <script src="js/script.js"></script>

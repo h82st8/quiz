@@ -32,11 +32,19 @@
     </header>
     <main class="main">
       <h1 class="title title_5">Спасибо за ответы! Получите результат расчета, оставив контакты.</h1>
-      <div class="input_wrap">
+
+      <ul id="style">
+        <li id='li'></li>
+      </ul>
+    
+      <div class="choice_wrap"></div>
+
+      <form action="mail.php" class="input_wrap">
         <span class="input_descr">Введите номер телефона, мы вышлем СМС с результатами:</span>
-        <input class="input" type="text" placeholder="Введите Ваш номер телефона">
-        <button class="input_btn">Получить результат расчета</button>
-      </div>
+        <input class="input" type="text" name='phone' placeholder="Введите Ваш номер телефона" required>
+        <input class="input_btn" type="submit" value="Получить результат расчета">
+      </form>
+
     </main>
 
   </div>

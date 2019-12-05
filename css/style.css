@@ -3,7 +3,23 @@
 @import url(header.css);
 */
 
-#li {
+.input_invisible {
+  display: none;
+}
+
+.container_2,
+.container_3,
+.container_4,
+.container_5 {
+  display: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  /*display: inline-block;*/
   height: 20px;
 }
 
