@@ -2,6 +2,7 @@
   display: none;
 }
 
+.container_1,
 .container_2,
 .container_3,
 .container_4,
@@ -225,15 +226,19 @@ li {
 }
 
 .choice__item_4 {
-  background-image: url(../imgs/dark.jpg);
+  background-image: url(../imgs/);
 }
 
 .choice__item_5 {
-  background-image: url(../imgs/color.jpg);
+  background-image: url(../imgs/);
 }
 
 .choice__item_6 {
-  background-image: url(../imgs/light.jpg);
+  background-image: url(../imgs/);
+}
+
+.choice__item_67 {
+  background-image: url(../imgs/);
 }
 
 .choice__item_7 {
@@ -348,6 +353,11 @@ li {
 
 .btn_active {
   border: 3px solid #000;
+}
+
+.next_step,
+.input_btn {
+  cursor: pointer;
 }
 
 @media (min-width: 320px) and (max-width: 425px) {

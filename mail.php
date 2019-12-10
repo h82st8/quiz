@@ -35,7 +35,7 @@ $mail->addAddress('i.shurmanov@reallife.pro');     // Кому будет ухо
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = 'Пользователь:  ' . $name . '  ' . $phone . '  ' . $Email . '  оставил заявку <br>' . $style . '<br>' . $color . '<br>' . $material . '<br>' . $money;
+$mail->Body    = 'Пользователь:  ' . $name . '  ' . $phone . '  ' . $Email . '  оставил заявку: <br>' . $style . '<br>' . $color . '<br>' . $material . '<br>' . $money;
 $mail->AltBody = '';
 
 if($mail->send()) {
