@@ -1,21 +1,39 @@
-// document.getElementById('btn11').addEventListener('click', fun);
-// document.getElementById('btn11').addEventListener('click', fun);
-// document.getElementById('btn22').addEventListener('click', fun);
-// document.getElementById('btn33').addEventListener('click', fun);
-// document.getElementById('btn44').addEventListener('click', fun);
+document.getElementById('btn00').addEventListener('click', fun1);
+document.getElementById('btn11').addEventListener('click', fun2);
+document.getElementById('btn22').addEventListener('click', fun3);
+document.getElementById('btn33').addEventListener('click', fun4);
+document.getElementById('btn44').addEventListener('click', fun5);
 
+// document.getElementById('btn00').addEventListener('click', fun("cont0", "cont1"));
+// document.getElementById('btn11').addEventListener('click', fun("cont1", "cont2"));
+// document.getElementById('btn22').addEventListener('click', fun("cont2", "cont3"));
+// document.getElementById('btn33').addEventListener('click', fun("cont3", "cont4"));
+// document.getElementById('btn44').addEventListener('click', fun("cont4", "cont5"));
 
-function fun(id1, id2) {
-	document.getElementById(id1).style.display='none';
-	document.getElementById(id2).style.display='block';
+function fun1() {
+	document.getElementById("cont0").style.display='none';
+	document.getElementById("cont1").style.display='block';
 }
-
-document.getElementById('btn00').addEventListener('click', fun("cont0", "cont1"));
-document.getElementById('btn11').addEventListener('click', fun("cont1", "cont2"));
-document.getElementById('btn22').addEventListener('click', fun("cont2", "cont3"));
-document.getElementById('btn33').addEventListener('click', fun("cont3", "cont4"));
-document.getElementById('btn44').addEventListener('click', fun("cont4", "cont5"));
-
+function fun2() {
+	document.getElementById("cont1").style.display='none';
+	document.getElementById("cont2").style.display='block';
+}
+function fun3() {
+	document.getElementById("cont2").style.display='none';
+	document.getElementById("cont3").style.display='block';
+}
+function fun4() {
+	document.getElementById("cont3").style.display='none';
+	document.getElementById("cont4").style.display='block';
+}
+function fun5() {
+	document.getElementById("cont4").style.display='none';
+	document.getElementById("cont5").style.display='block';
+}
+// function fun(id1, id2) {
+// 	document.getElementById(id1).style.display='none';
+// 	document.getElementById(id2).style.display='block';
+// }
 
 // fun("cont0", "cont1");
 // fun("cont1", "cont2");
@@ -23,10 +41,10 @@ document.getElementById('btn44').addEventListener('click', fun("cont4", "cont5")
 // fun("cont3", "cont4");
 // fun("cont4", "cont5");
 
-	document.querySelector('.choice_wrap').addEventListener('click', func);
-	document.querySelector('.choice_wrap_2').addEventListener('click', func2);
-	document.querySelector('.choice_wrap_3').addEventListener('click', func3);
-	document.querySelector('.choice_wrap_4').addEventListener('click', func4);
+document.querySelector('.choice_wrap').addEventListener('click', func);
+document.querySelector('.choice_wrap_2').addEventListener('click', func2);
+document.querySelector('.choice_wrap_3').addEventListener('click', func3);
+document.querySelector('.choice_wrap_4').addEventListener('click', func4);
 
 function func(event) {
 	console.log(event);
