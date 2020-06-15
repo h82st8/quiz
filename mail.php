@@ -1,26 +1,21 @@
 <?php
-
 require 'libs/phpmailer/PHPMailerAutoload.php';
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-$name = $_POST['name'];
+$phone = $_POST['phone'];
 $style = $_POST['style'];
 $color = $_POST['color'];
 $material = $_POST['material'];
 $money = $_POST['money'];
-$phone = $_POST['phone'];
-$Email = $_POST['mail'];
-$text = $_POST['text'];
-$theme = $_POST['theme'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
+$mail->Host = 'smtp.yandex.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'as@reallife.pro'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'qweasdzxc777zxc'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Username = 'info@reallife.pro'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = '3216732167'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
@@ -34,13 +29,11 @@ $mail->addAddress('i.shurmanov@reallife.pro');     // Кому будет ухо
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = 'Пользователь:  ' . $name . '  ' . $phone . '  ' . $Email . '  оставил заявку: <br>' . $style . '<br>' . $color . '<br>' . $material . '<br>' . $money;
+$mail->Subject = 'Заявка';
+$mail->Body    = 'Пользователь:  ' . $phone . '<br>' . '  оставил заявку: <br>' . $style . '<br>' . $color . '<br>' . $material . '<br>' . $money;
 $mail->AltBody = '';
 
 if($mail->send()) {
-    echo 'Error';
-} else {
-    header('location: thank-you.html');
+	header("location: thanks.html");
 }
 ?>
